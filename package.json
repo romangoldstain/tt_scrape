@@ -1,0 +1,12 @@
+{
+  "name": "tt_scrape",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "git@github.com:romangoldstain/tt_scrape.git",
+  "author": "roman goldstain",
+  "license": "MIT",
+  "dependencies": {
+    "tiktok-discovery-api": "^2.0.0"
+  }
+}

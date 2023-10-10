@@ -1,0 +1,168 @@
+{
+    "list": [
+        {
+            "hashtag_id": "122223",
+            "hashtag_name": "israel",
+            "country_info": {
+                "id": "IL",
+                "value": "Israel",
+                "label": "IL"
+            },
+            "is_promoted": false,
+            "trend": [
+                {
+                    "time": 1696291200,
+                    "value": 0.26
+                },
+                {
+                    "time": 1696377600,
+                    "value": 0.26
+                },
+                {
+                    "time": 1696464000,
+                    "value": 0.28
+                },
+                {
+                    "time": 1696550400,
+                    "value": 0.31
+                },
+                {
+                    "time": 1696636800,
+                    "value": 0.29
+                },
+                {
+                    "time": 1696723200,
+                    "value": 0.67
+                },
+                {
+                    "time": 1696809600,
+                    "value": 1
+                }
+            ],
+            "creators": [
+                {
+                    "nick_name": "Rodrigo Cristão",
+                    "avatar_url": "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/442e7a969b1e572892b27dcae5f3d65b~c5_100x100.png?x-expires=1697137200&x-signature=ZuudCi57u9lTqGXRmzJi4WKyavk%3D"
+                },
+                {
+                    "nick_name": "Ovidiu",
+                    "avatar_url": "https://p16-sign-va.tiktokcdn.com/tos-maliva-avt-0068/5e92579479d59c2d37b87a28c18f2bd9~c5_100x100.png?x-expires=1697137200&x-signature=CKfe%2FCfp8cGiwEyXiOT2AzKQZUQ%3D"
+                },
+                {
+                    "nick_name": "Juan Oliveira",
+                    "avatar_url": "https://p77-sign-va.tiktokcdn.com/tos-maliva-avt-0068/6500db65da2b7db07b2a0622da54f85a~c5_100x100.png?x-expires=1697137200&x-signature=%2FDM87s%2FCg%2BlMPaAh2i5y7oUX%2BRw%3D"
+                }
+            ],
+            "trending_type": 1,
+            "publish_cnt": 8883,
+            "video_views": 95557903,
+            "rank": 1,
+            "rank_diff": 6,
+            "rank_diff_type": 1
+        },
+        {
+            "hashtag_id": "4462910",
+            "hashtag_name": "מלחמה",
+            "country_info": {
+                "id": "IL",
+                "value": "Israel",
+                "label": "IL"
+            },
+            "is_promoted": false,
+            "trend": [
+                {
+                    "time": 1696291200,
+                    "value": 0.01
+                },
+                {
+                    "time": 1696377600,
+                    "value": 0.01
+                },
+                {
+                    "time": 1696464000,
+                    "value": 0.02
+                },
+                {
+                    "time": 1696550400,
+                    "value": 0.02
+                },
+                {
+                    "time": 1696636800,
+                    "value": 0.02
+                },
+                {
+                    "time": 1696723200,
+                    "value": 0.86
+                },
+                {
+                    "time": 1696809600,
+                    "value": 1
+                }
+            ],
+            "trending_type": 1,
+            "publish_cnt": 5402,
+            "video_views": 85884726,
+            "rank": 2,
+            "rank_diff": 1,
+            "rank_diff_type": 1
+        },
+        {
+            "hashtag_id": "668570",
+            "hashtag_name": "ישראל",
+            "country_info": {
+                "id": "IL",
+                "value": "Israel",
+                "label": "IL"
+            },
+            "is_promoted": false,
+            "trend": [
+                {
+                    "time": 1696291200,
+                    "value": 0.25
+                },
+                {
+                    "time": 1696377600,
+                    "value": 0.26
+                },
+                {
+                    "time": 1696464000,
+                    "value": 0.26
+                },
+                {
+                    "time": 1696550400,
+                    "value": 0.26
+                },
+                {
+                    "time": 1696636800,
+                    "value": 0.24
+                },
+                {
+                    "time": 1696723200,
+                    "value": 0.8
+                },
+                {
+                    "time": 1696809600,
+                    "value": 1
+                }
+            ],
+            "creators": [
+                {
+                    "nick_name": "Blazy",
+                    "avatar_url": "https://p77-sign-va.tiktokcdn.com/tos-maliva-avt-0068/d4412a0b44577d47285a0f08deb149bf~c5_100x100.png?x-expires=1697137200&x-signature=PSLJ5yZhsLUzBIdYv2k6bSmYdP4%3D"
+                }
+            ],
+            "trending_type": 1,
+            "publish_cnt": 6856,
+            "video_views": 70885295,
+            "rank": 3,
+            "rank_diff": 5,
+            "rank_diff_type": 1
+        }
+    ],
+    "pagination": {
+        "page": 1,
+        "size": 3,
+        "total": 100,
+        "has_more": true
+    }
+}
