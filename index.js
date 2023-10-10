@@ -5,6 +5,7 @@ import yargs from 'yargs/yargs'
 import TiktokDiscovery from "tiktok-discovery-api"
 import axios from 'axios'
 import { JSDOM } from "jsdom"
+import fs from 'fs'
 
 const main = async () => {
     const args = hideBin(process.argv)
@@ -37,7 +38,8 @@ const main = async () => {
             },
             async argv => {
                 try {
-                    await retrieveTrendingHashtag(argv['country-code'], argv['page'], argv['limit'], argv['period'])
+                    const data = await retrieveTrendingHashtag(argv['country-code'], argv['page'], argv['limit'], argv['period'])
+                    writeToFile(data, 'hashtags')
                 }
                 catch (e) {
                     console.error('Something went wrong :(', e)
@@ -66,7 +68,8 @@ const main = async () => {
             },
             async argv => {
                 try {
-                    await retrieveHashtagVideos(argv['hashtag'], argv['country-code'], argv['period'])
+                    const data = await retrieveHashtagVideos(argv['hashtag'], argv['country-code'], argv['period'])
+                    writeToFile(data, 'videos')
                 }
                 catch (e) {
                     console.error('Something went wrong :(', e)
@@ -82,8 +85,7 @@ main().catch(e => console.error(e))
 
 
 async function retrieveTrendingHashtag(countryCode, page, limit, period) {
-    const trending = await TiktokDiscovery.getTrendingHastag(countryCode, page, limit, period)
-    console.log(JSON.stringify(trending))
+    return await TiktokDiscovery.getTrendingHastag(countryCode, page, limit, period)
 }
 
 async function retrieveHashtagVideos(hashtag, countryCode, period) {
@@ -96,13 +98,16 @@ async function retrieveHashtagVideos(hashtag, countryCode, period) {
         }
     })
 
-    const result = {
+    return {
         hashtag,
         countryCode,
         videos
     }
-    console.log(JSON.stringify(result))
 }
 
-
+async function writeToFile(data, tag) {
+    const now = Date.now()
+    fs.mkdirSync('out')
+    fs.writeFileSync(`out/${tag}_${now}.json`, JSON.stringify(data))
+}
 
