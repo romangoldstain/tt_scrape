@@ -7,6 +7,9 @@
   "author": "roman goldstain",
   "license": "MIT",
   "dependencies": {
-    "tiktok-discovery-api": "^2.0.0"
+    "axios": "^1.5.1",
+    "jsdom": "^22.1.0",
+    "tiktok-discovery-api": "^2.0.0",
+    "yargs": "^17.7.2"
   }
 }
