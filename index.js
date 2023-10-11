@@ -107,7 +107,9 @@ async function retrieveHashtagVideos(hashtag, countryCode, period) {
 
 async function writeToFile(data, tag) {
     const now = Date.now()
-    fs.mkdirSync('out')
+    if (!fs.existsSync('out')) {
+        fs.mkdirSync('out')
+    }
     fs.writeFileSync(`out/${tag}_${now}.json`, JSON.stringify(data))
 }
 
